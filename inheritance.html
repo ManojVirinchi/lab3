@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <p id="inh">
+
+        </p>
+        <script>
+            class user
+            {
+              constructor(username,email,password)
+              {
+                  this.username=username;
+                  this.email=email;
+                  this.password=password;
+              }
+
+            }
+            class name extends user{
+                constructor(username,email,password,pack)
+                {
+                    super(username,email,password);
+                    this.pack=pack;
+                }
+                getPack()
+                
+                {
+                    document.getElementById("inh").innerHTML= this.username+" : "+ this.pack;
+                }
+            }
+            let obj1 = new name("Manoj","xyz@gmail.com","123","48367");
+            obj1.getPack();
+        </script>
+        
+    </body>
+</html>

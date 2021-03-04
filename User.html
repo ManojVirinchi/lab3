@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>User</title>
+        
+
+    </head>
+    <body>
+        <p id="user">
+
+        </p>
+        <script>
+            class User{
+                static count=0;
+               
+                constructor(username,email,password)
+                {
+                    this.username=username;
+                    this.email=email;
+                    this.password=password;
+                    User.count = User.count+1;
+                }
+                count(){
+                  
+                    document.getElementById("user").innerHTML= "number of objects created = "+User.count;
+                }
+                register(){
+                    document.getElementById("user").innerHTML=this.username;
+                }
+            }
+            let obj1= new User("Manoj", "xyz@gmail.com","123");
+            obj1.register();
+            let obj2 = new User("Manoj2", "xy2z@gmail.com","1243");
+            obj2.count();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Factorial</title>
+        <script>
+            let fact= () =>
+               {
+               let i;
+               let f=1;
+               let x= document.getElementById("number").value;
+               for(i=1;i<=x;i++)
+               {
+                   f=f*i;
+               }
+               document.getElementById("op").innerHTML=f;
+            }
+          
+           
+           </script>
+    </head>
+    <body>
+            <input type="number" id="number">
+            <input  type="submit" onclick="fact()">
+        <p id="op"></p>
+
+   
+    </body>
+</html>
